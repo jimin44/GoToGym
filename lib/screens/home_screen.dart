@@ -32,17 +32,17 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Padding(
+        appBar: AppBar(
+          title: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 7),
           child: const Text('GoToGym'),
         ),
         backgroundColor: Colors.black,
         elevation: 2,
-      ),
-      body: SafeArea(
-        child: _widgetOptions.elementAt(_selectedIndex),
-      ),
+        ),
+        body: SafeArea(
+          child: _widgetOptions.elementAt(_selectedIndex),
+        ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.black,
@@ -78,5 +78,6 @@ class _HomeScreenState extends State<HomeScreen> {
         onTap: _onItemTapped,
       ),
     );
+
   }
 }
